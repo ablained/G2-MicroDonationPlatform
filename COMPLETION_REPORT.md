@@ -516,5 +516,4 @@ npx expo start --port 8090
 
 ---
 
-**This platform is ready to make a real difference in your community!** 💝
-
+**This platform is ready to make a real difference in your community!** 💝 
