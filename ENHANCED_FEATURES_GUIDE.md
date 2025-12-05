@@ -12,7 +12,7 @@ This guide highlights the major improvements made to the Micro-Donation Platform
 Simple form with 4 fields
 
 ### Now:
-Comprehensive form with **10+ fields** organized in sections
+Comprehensive form with **10+ fields** organized in sections 
 
 #### How to Use:
 
