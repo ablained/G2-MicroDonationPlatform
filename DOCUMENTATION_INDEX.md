@@ -8,7 +8,7 @@
 3. Next: **`ENHANCED_FEATURES_GUIDE.md`** - User-friendly feature guide
 4. Finally: **`TESTING_GUIDE.md`** - Test the app yourself
 
-### **For Developers:**
+### **For Developers:** 
 1. Start with: **`TECHNICAL_DOCUMENTATION.md`** - Technical overview
 2. Then read: **`ARCHITECTURE.md`** - System design
 3. Next: **`CODE_CHANGES.md`** - Detailed code modifications
