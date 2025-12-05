@@ -348,4 +348,4 @@ Then scan the QR code with Expo Go and enjoy your micro-donation platform!
 
 ---
 
-Congratulations on your new micro-donation platform! 🎉
+Congratulations on your new micro-donation platform! 🎉 
