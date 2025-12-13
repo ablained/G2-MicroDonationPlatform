@@ -2,7 +2,7 @@
 
 ## 🎯 Overview
 
-Your micro-donation platform now supports **9 powerful payment methods** to maximize user convenience and revenue. Each method is optimized for different user preferences, geographic locations, and payment behaviors.
+Your micro-donation platform now supports **11 powerful payment methods** to maximize user convenience and revenue. Each method is optimized for different user preferences, geographic locations, and payment behaviors.
 
 ---
 
@@ -18,6 +18,9 @@ Your micro-donation platform now supports **9 powerful payment methods** to maxi
 | **PayPal** | 🌐 | Instant | 3-4% | International users | 5-8% |
 | **Apple Pay** | 🍎 | 2-3 sec | 0-2% | iOS users | 8-12% |
 | **Google Pay** | 🔵 | 2-3 sec | 0-1% | Android users | 12-15% |
+| **Cryptocurrency** | ₿ | 5-30 min | 0.5-2% | Tech-savvy users | 1-3% |
+| **BNPL** | 📅 | Instant | 0% | Budget-conscious | 3-5% |
+| **Promo Codes** | 🎟️ | Instant | 0% | Deal hunters | 2-3% |
 
 ---
 
@@ -339,6 +342,212 @@ Fee: 2-3% + fixed fee
 
 ---
 
+### 9️⃣ CRYPTOCURRENCY (₿)
+
+**What It Is:** Blockchain-based digital currency payments
+
+**Supported Coins:**
+```
+₿ Bitcoin         - Most stable, highest value
+Ξ Ethereum        - Most versatile, smart contracts
+◆ BNB (Binance)   - Popular in Asia, low fees
+◈ USDT (Stablecoin) - 1:1 USD stability, best for donation conversion
+```
+
+**Key Features:**
+- ✅ **Transparent** - Blockchain verification
+- ✅ **Low Fees** - 0.5-2% (vs 2-5% credit card)
+- ✅ **Fast Settlement** - 5-30 minutes
+- ✅ **Tech Appeal** - Attracts crypto enthusiasts
+- ✅ **No Chargebacks** - Irreversible transactions
+- ✅ **Global** - No borders or restrictions
+
+**How It Works:**
+```
+1. User selects "Cryptocurrency"
+2. Chooses coin (BTC, ETH, BNB, USDT)
+3. Enters their wallet address
+4. App generates payment address + QR
+5. User scans QR or sends directly
+6. Blockchain confirms (5-30 min)
+7. Donation credited
+```
+
+**Pricing Example (₱1,000 donation):**
+```
+Bitcoin:    0.025 BTC
+Ethereum:   0.5 ETH
+BNB:        2.5 BNB
+USDT:       50 USDT (most stable)
+
+Processing fee: 0.5-2% (vs 3-5% cards)
+```
+
+**Revenue Potential:**
+- Average transaction: ₱5,000-100,000 (larger donations)
+- Monthly active users: 1-3% (early adopters)
+- Expected revenue: ₱50K-200K/month
+- Growth potential: 10-50% YoY
+
+**Implementation Status:** 🔴 **REQUIRES SETUP**
+
+**Setup Steps:**
+1. Get crypto exchange API (Coinbase, Kraken, Binance)
+2. Setup wallet for receiving
+3. Configure payment processor
+4. Implement QR code generation
+5. Setup blockchain verification
+6. Implement exchange rate updates
+
+**Security Considerations:**
+- Cold wallet storage (95%+ funds)
+- Multi-sig wallet (requires 2-3 approvals)
+- Daily withdrawal limits
+- Regular security audits
+
+---
+
+### 🔟 BNPL - BUY NOW, PAY LATER (📅)
+
+**What It Is:** Split payment into installments with 0% interest
+
+**Key Features:**
+- ✅ **Flexible** - 3, 6, or 12 month options
+- ✅ **Zero Interest** - 0% APR all options
+- ✅ **Instant Approval** - No credit check
+- ✅ **Budget Friendly** - Lower upfront cost
+- ✅ **Encourages Giving** - Removes budget barrier
+
+**Payment Plans Offered:**
+```
+Option 1: 3 Installments
+- Monthly payment: ₱{amount/3}
+- Total: ₱{amount}
+- Interest: 0%
+- Term: 3 months
+
+Option 2: 6 Installments
+- Monthly payment: ₱{amount/6}
+- Total: ₱{amount}
+- Interest: 0%
+- Term: 6 months
+
+Option 3: 12 Installments
+- Monthly payment: ₱{amount/12}
+- Total: ₱{amount}
+- Interest: 0%
+- Term: 12 months
+```
+
+**Psychology:**
+```
+Traditional: "₱6,000 donation"
+BNPL 6mo: "Only ₱1,000/month!"
+→ 40-60% increase in donation size
+```
+
+**How It Works:**
+```
+1. User selects "Buy Now, Pay Later"
+2. Chooses installment plan
+3. Shows monthly amount
+4. Enters debit/credit card
+5. First payment charged immediately
+6. Remaining payments auto-charged monthly
+7. SMS/Email reminders for upcoming payments
+```
+
+**Revenue Potential:**
+- Average transaction: ₱3,000-12,000 (larger due to BNPL appeal)
+- Monthly active users: 3-5%
+- Expected revenue: ₱100K-300K/month
+- Donation size increase: 40-60%
+- Repeat rate: 70%+ (built-in recurring)
+
+**Implementation Status:** 🟡 **READY (requires BNPL provider)**
+
+**Partners:**
+- Shopee PayLater
+- GCash PayLater
+- Lazada Pay Later
+- GrabPay Later
+- Custom payment processor
+
+**Key Metrics to Track:**
+- Installment completion rate (target: 95%+)
+- Default rate (target: <5%)
+- Customer satisfaction (target: 4.5+/5)
+- AOV increase from BNPL (target: +50%)
+
+---
+
+### 1️⃣1️⃣ PROMO & GIFT CODES (🎟️)
+
+**What It Is:** Redemption of promotional codes and gift cards
+
+**Types Supported:**
+
+**Promo Codes:**
+- Partner discounts
+- Campaign codes
+- Referral bonuses
+- Seasonal promotions
+
+**Gift Cards:**
+- Physical or digital
+- Any amount
+- No expiration
+- Transferable
+
+**How It Works:**
+```
+1. User selects "Promo Codes"
+2. Enters code (e.g., "DONATE50")
+3. App validates code
+4. Discount/credit applied
+5. User donates with reduced amount
+6. Balance updated
+```
+
+**Example Codes:**
+```
+DONATE50 = ₱50 bonus
+WELCOME20 = 20% discount
+REFERRAL100 = ₱100 referral bonus
+GIFT250 = ₱250 gift card
+CORPORATE1000 = ₱1,000 corporate gift
+```
+
+**Revenue Impact:**
+- Average transaction: ₱500-2,000
+- User acquisition: +30-50% (gift cards)
+- Activation rate: +20-30% (promo codes)
+- Retention: +15-25% (referral codes)
+- Expected revenue: ₱50K-150K/month
+
+**Marketing Applications:**
+
+**1. Viral Referral Campaign**
+```
+"Give ₱500, Get ₱100"
+- Donor gives ₱500 donation
+- Earns "REFERRAL100" code
+- Shares with friend
+- Friend gets ₱100 credit
+- Donor gets ₱50 bonus
+Result: Each pair = 2 active users
+```
+
+**2. Corporate Gifting**
+```
+Company buys 100 × ₱1,000 gift codes
+= ₱100,000 revenue instantly
+Employee uses code to donate
+Company gets recognition
+Employees feel good
+Result: B2B revenue + engagement
+```
+
 **3. Seasonal Campaigns**
 ```
 "Holiday Giving Campaign"
@@ -466,7 +675,8 @@ If user has wallet balance:
 **Cards:** PCI Level 1 compliance
 **PayPal:** PayPal security
 **Apple/Google Pay:** Biometric + tokenization
-
+**Crypto:** Blockchain immutability + cold storage
+**BNPL:** Partner security standards
 ---
 
 ## 📈 Expected Revenue by Month
@@ -594,7 +804,7 @@ A: Recommend consulting accountant for compliance
 
 ## 🎊 Conclusion
 
-With **9 powerful payment methods**, you've created a flexible, secure, and user-friendly payment ecosystem that:
+With **11 powerful payment methods**, you've created a flexible, secure, and user-friendly payment ecosystem that:
 
 ✅ **Maximizes Accessibility** - Every user can donate their preferred way
 ✅ **Increases Revenue** - Multiple monetization points
