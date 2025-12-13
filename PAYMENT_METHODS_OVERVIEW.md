@@ -5,7 +5,7 @@
 
 ## ✅ What You Got
 
-### From **3 Payment Methods** → **11 Payment Methods**
+### From **3 Payment Methods** → **9 Payment Methods**
 
 ```
 BEFORE                          AFTER
@@ -18,9 +18,6 @@ BEFORE                          AFTER
                                 🌐 PayPal ✨ NEW
                                 🍎 Apple Pay ✨ NEW
                                 🔵 Google Pay ✨ NEW
-                                ₿ Cryptocurrency ✨ NEW
-                                📅 BNPL ✨ NEW
-                                🎟️ Promo Codes ✨ NEW
 ```
 
 ---
@@ -106,28 +103,6 @@ BEFORE                          AFTER
    - Coverage: 5-8% users
    - Revenue: ₱150K-400K/month
 
-9. **₿ Cryptocurrency**
-   - Bitcoin, Ethereum, BNB, USDT
-   - Low fees (0.5-2%)
-   - Tech-savvy users
-   - Blockchain transparent
-   - Coverage: 1-3% users
-   - Revenue: ₱50K-200K/month
-
-10. **📅 Buy Now, Pay Later (BNPL)**
-    - 3, 6, or 12 month installments
-    - 0% interest
-    - Increases donation size 40-60%
-    - No credit check
-    - Coverage: 3-5% users
-    - Revenue: ₱100K-300K/month
-
-11. **🎟️ Promo & Gift Codes**
-    - Referral bonuses
-    - Corporate gifting
-    - Seasonal campaigns
-    - Coverage: 2-3% users
-    - Revenue: ₱100K-300K/month
 
 **Phase 3 Total Revenue: ₱400K-1.2M/month**
 **All Combined: ₱1.75M-4.1M/month potential**
@@ -279,10 +254,8 @@ After: Unique instructions for each of 11 methods
 - 🟡 Apple Pay (iOS)
 - 🟡 Google Pay (Android)
 - 🟡 PayPal (API)
-- 🟡 BNPL (Partner)
 
 ### 🔴 Future (1-3 months)
-- 🔴 Cryptocurrency
 - 🔴 Advanced analytics
 - 🔴 Regional optimization
 
