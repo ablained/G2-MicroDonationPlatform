@@ -45,7 +45,7 @@ const [paymentMethodDetails, setPaymentMethodDetails] = useState({
 
 **Key Features:**
 - Horizontal scrolling for space efficiency
-- 9 methods with emojis
+- 11 methods with emojis
 - Visual feedback on selection
 - Chip-style buttons
 
@@ -70,6 +70,9 @@ const renderPaymentInstructions = () => (
 - 🌐 PayPal
 - 🍎 Apple Pay
 - 🔵 Google Pay
+- ₿ Cryptocurrency
+- 📅 BNPL
+- 🎟️ Promo Codes
 
 ---
 
@@ -113,6 +116,25 @@ const renderPaymentInstructions = () => (
   </View>
 )}
 ```
+
+#### BNPL (Example)
+```javascript
+{paymentMethod === 'bnpl' && (
+  <View>
+    <Text style={styles.sectionTitle}>Buy Now, Pay Later (BNPL)</Text>
+    <TouchableOpacity 
+      style={[styles.bnplOption, paymentMethodDetails.selectedBNPL === 'installments-3' && styles.bnplOptionSelected]} 
+      onPress={() => setPaymentMethodDetails({...paymentMethodDetails, selectedBNPL: 'installments-3'})}>
+      <Text style={{ fontWeight: 'bold', fontSize: 14 }}>3 Installments</Text>
+      <Text style={{ fontSize: 12, color: '#666' }}>
+        ₱{(parseFloat(donationAmount) / 3).toFixed(2)} × 3 (0% interest)
+      </Text>
+    </TouchableOpacity>
+    {/* More options... */}
+  </View>
+)}
+```
+
 ---
 
 ### 5. New Styles Added (Line ~2707)
@@ -173,6 +195,8 @@ paymentMethodDetails = {
   cardNumber: '1234 5678 9012 3456',      // 16-19 digits
   cardExpiry: '12/25',                     // MM/YY format
   cardCVV: '123',                          // 3-4 digits
+  cryptoAddress: '0x742d35C6634C0532925...' // 40+ chars
+  selectedBNPL: 'installments-3'          // 3, 6, or 12 months
 }
 ```
 
@@ -202,7 +226,7 @@ Enter Amount (₱500)
         ↓
 Select Cause
         ↓
-Choose Payment Method (9 options)
+Choose Payment Method (11 options)
         ↓
             ├─ Wallet → Instant confirmation
             ├─ GCash → Show instructions + reference
@@ -213,6 +237,8 @@ Choose Payment Method (9 options)
             ├─ Apple Pay → Biometric + instant
             ├─ Google Pay → Biometric + instant
             ├─ Crypto → Show wallet address + QR
+            ├─ BNPL → Select installment plan
+            └─ Promo Code → Validate & apply discount
         ↓
 Confirm Payment
         ↓
@@ -228,7 +254,7 @@ Receipt Generated
 ## 🎯 Integration Roadmap
 
 ### Current Implementation (Ready):
-✅ All 9 methods have UI
+✅ All 11 methods have UI
 ✅ All methods have instructions
 ✅ Payment method selection works
 ✅ Input fields for details
@@ -239,6 +265,8 @@ Receipt Generated
 🟡 Apple Pay SDK setup
 🟡 Google Pay SDK setup
 🟡 PayPal API integration
+🟡 Crypto exchange APIs
+🟡 BNPL partner integration
 
 ### Analytics Phase:
 📊 Track which methods users prefer
@@ -333,10 +361,13 @@ const saveCard = (cardDetails) => {
 
 ## 🧪 Testing Checklist
 
-- [ ] All 9 buttons visible
+- [ ] All 11 buttons visible
 - [ ] Methods highlight on selection
 - [ ] Instructions display correctly
 - [ ] Input fields accept input
+- [ ] BNPL options calculate correctly
+- [ ] Promo code input works
+- [ ] Crypto address input accepts long strings
 - [ ] Mobile layout responsive
 - [ ] No console errors
 - [ ] Payment flow completes
@@ -435,4 +466,4 @@ For questions about:
 **Launch Status:** 🟡 Ready with backend setup
 **Revenue Ready:** ✅ Yes (3 methods) → 🟡 Future (8 more)
 
-All 9 payment methods are implemented and ready for your review! 🎉
+All 11 payment methods are implemented and ready for your review! 🎉
